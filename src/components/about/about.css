@@ -1,0 +1,109 @@
+.a {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.a-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+}
+
+.a-card.bg {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: #333;
+}
+
+.a-card {
+  width: 60%;
+  height: 70vh;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.a-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.a-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-right: 5rem;
+  gap: 1rem;
+}
+
+
+.a-title {
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.a-sub {
+  margin: 20px 0px;
+}
+
+.a-desc{
+    font-weight: 300;
+}
+
+.a-skill-icons-wrapper {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.a-skill-icon > i {
+  font-size: 270%;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (max-width:480px) {
+    .a{
+      flex-direction: column;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .a-left {
+      width: 100%;
+    }
+
+    .a-card {
+      height: 20vh;
+    }
+
+    .a-card.bg, .a-award {
+      display: none;
+    }
+
+    .a-right{
+      padding: 20px;
+    }
+    .a-skill-icons-wrapper {
+      justify-content: center;
+    }
+    .a-skill-icon:nth-last-child(-n + 4) {
+      display: none;
+    }
+
+    .a-skill-icon > i {
+      font-size: 150%;
+    } 
+
+}
