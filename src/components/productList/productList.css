@@ -23,7 +23,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 @media screen and (max-width: 480px) {
@@ -35,7 +35,9 @@
     width: 100%;
   }
 
-  .pl-desc {
-    display: none;
+  .pl-list {
+    flex-direction: column;
+    align-content: center;
   }
+
 }

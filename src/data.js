@@ -1,21 +1,34 @@
-export const products = [
+export const personalProjects = [
   {
-    id: 1,
+    id:"pp-1",
     img: "",
     link: "http://lama.dev",
   },
   {
-    id: 2,
+    id: "pp-2",
     img: "",
     link: "http://lama.dev",
   },
   {
-    id: 3,
+    id: "pp-3",
+    img: "",
+    link: "http://lama.dev",
+  },
+  {
+    id: "pp-4",
     img: "",
     link: "http://lama.dev",
   }
 
 ];
+
+export const otherProjects = [
+  {
+    id: "op-1",
+    img: "./email.png",
+    link: "https://storiusapp.com/"
+  }
+]
 
 export const skills = [
   {
@@ -67,9 +80,13 @@ export const skills = [
     "class": "devicon-git-plain-wordmark"
   },
   {
-    "name": "GitHub",
-    "class": "devicon-github-plain-wordmark"
-  },      
+    "name": "Nginx",
+    "class": "devicon-nginx-plain-wordmark"
+  },
+  {
+    "name": "Linux",
+    "class": "devicon-linux-plain"
+  },
   {
     "name": "HTML 5",
     "class": "devicon-html5-plain-wordmark",
@@ -77,5 +94,13 @@ export const skills = [
   {
     "name": "CSS 3",
     "class": "devicon-css3-plain-wordmark",
+  },
+  {
+    "name": "Vim",
+    "class": "devicon-vim-plain"
+  },
+  {
+    "name": "Trello",
+    "class": "devicon-trello-plain-wordmark"
   }
 ]

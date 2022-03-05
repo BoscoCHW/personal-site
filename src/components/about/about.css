@@ -77,7 +77,7 @@ a, a:hover, a:focus, a:active {
     .a{
       flex-direction: column;
       text-align: center;
-      margin-top: 50px;
+      margin-top: 30px;
     }
 
     .a-left {
@@ -97,9 +97,6 @@ a, a:hover, a:focus, a:active {
     }
     .a-skill-icons-wrapper {
       justify-content: center;
-    }
-    .a-skill-icon:nth-last-child(-n + 4) {
-      display: none;
     }
 
     .a-skill-icon > i {
