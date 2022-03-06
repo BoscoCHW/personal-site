@@ -27,7 +27,9 @@ const About = () => {
       <div className="a-right">
         <div className="a-about-me-wrapper">
           <h1 className="a-title">About Me</h1>
-     
+          <p className="a-sub">
+            I am a software developer who cares about the environment and the community we live in.
+          </p>
           <p className="a-desc">
             I have a strong problem-solving orientation. I like to approach and think about problems in different ways.
             I like studying mathematics and data structures because they allow us to conceptualize problems in ways that

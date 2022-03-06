@@ -55,7 +55,7 @@ export const otherProjects = [
     id: "op-1",
     title: "Storius",
     img: "./assets/images/storius.png",
-    description: "Storius is a free audio-based travel app that gives you detailed stories of spectacular sites in the world.",
+    description: "Storius is an award-winning audio-based travel app that gives you detailed stories of spectacular sites in the world.",
     links: [
       {
         name: "landing",
