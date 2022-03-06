@@ -3,6 +3,7 @@ import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Intro from "./components/intro/Intro";
 import ProductList from "./components/productList/ProductList";
+import Footer from "./components/footer/Footer";
 import Toggle from "./components/toggle/Toggle";
 import { ThemeContext } from "./context";
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -25,6 +26,7 @@ const App = () => {
       <About />
       <ProductList />
       <Contact />
+      <Footer />
     </div>
   );
 };

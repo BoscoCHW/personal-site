@@ -1,5 +1,4 @@
 .c {
-  height: 100vh;
   position: relative;
 }
 
@@ -13,6 +12,7 @@
 .c-wrapper {
   padding: 50px;
   display: flex;
+  gap: 1rem;
 }
 
 .c-left {
