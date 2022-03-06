@@ -15,7 +15,7 @@ const Product = ({project}) => {
         <div className="p-circle"></div>
       </div>
       <div className="p-picture-wrapper"
-            onMouseEnter={e=> {setImageStyle({filter: "opacity(40%)"}); setLinkWrapperStyle({display: 'flex'})}} 
+            onMouseEnter={e=> {setImageStyle({filter: "opacity(0.4)"}); setLinkWrapperStyle({display: 'flex'})}} 
             onMouseLeave={e => {setImageStyle({}); setLinkWrapperStyle({display: 'none'})}} >
         <div className="p-links-wrapper" style={linkWrapperStyle}>
           {project.links.map(link => {
