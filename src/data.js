@@ -39,11 +39,11 @@ export const personalProjects = [
     links: [
       {
         name: "landing",
-        url: "",
+        url: "https://shop-easy-bc.netlify.app/",
       },
       {
         name: "github",
-        url: ""
+        url: "https://github.com/BoscoCHW/shop-easy"
       }
     ],
   }
