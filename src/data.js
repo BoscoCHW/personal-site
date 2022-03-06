@@ -1,23 +1,51 @@
 export const personalProjects = [
   {
     id:"pp-1",
-    img: "",
-    link: "http://lama.dev",
+    title: "Eventful",
+    img: "./assets/images/eventful.png",
+    description: "A calendar app that offers a quick and easy way for the user to make, organize, and edit their events.",
+    links: [
+      {
+        name: "landing",
+        url: "https://agile-group-project.herokuapp.com/"
+      },
+      {
+        name: "TS",
+        url: "https://github.com/BoscoCHW/eventfulTypeScript"
+      },
+      {
+        name: "JS",
+        url: "https://github.com/BoscoCHW/eventful"
+      }
+    ]
   },
   {
     id: "pp-2",
-    img: "",
-    link: "http://lama.dev",
+    title: "Greedy Snake 2.0",
+    img: "./assets/images/greedySnake.jpg",
+    description: "A two-player Greedy Snake made with Pygame. The snake is implemented by a linked list.",
+    links: [
+      {
+        name: "github",
+        url: "https://github.com/BoscoCHW/greedy-snake-2.0/tree/main"
+      }
+    ]
   },
   {
     id: "pp-3",
-    img: "",
-    link: "http://lama.dev",
-  },
-  {
-    id: "pp-4",
-    img: "",
-    link: "http://lama.dev",
+    title: "Shop Easy",
+    img: "./assets/images/shop-easy.png",
+    description: "A shopping site made with React Typescript.",
+    links: [
+      {
+        name: "landing",
+        url: "",
+      },
+      {
+        name: "github",
+        url: ""
+      }
+    ],
   }
 
 ];
@@ -25,8 +53,15 @@ export const personalProjects = [
 export const otherProjects = [
   {
     id: "op-1",
-    img: "./email.png",
-    link: "https://storiusapp.com/"
+    title: "Storius",
+    img: "./assets/images/storius.png",
+    description: "Storius is a free audio-based travel app that gives you detailed stories of spectacular sites in the world.",
+    links: [
+      {
+        name: "landing",
+        url: "https://storiusapp.com/"
+      }
+    ]
   }
 ]
 

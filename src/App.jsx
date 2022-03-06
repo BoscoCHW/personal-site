@@ -5,6 +5,10 @@ import Intro from "./components/intro/Intro";
 import ProductList from "./components/productList/ProductList";
 import Toggle from "./components/toggle/Toggle";
 import { ThemeContext } from "./context";
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faEye } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faEye)
 
 const App = () => {
   const theme = useContext(ThemeContext);

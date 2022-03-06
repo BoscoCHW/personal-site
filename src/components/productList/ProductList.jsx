@@ -13,8 +13,8 @@ const ProductList = () => {
         </p>
       </div>
       <div className="pl-list">
-        {personalProjects.map((item) => (
-          <Product key={item.id} img={item.img} link={item.link} />
+        {personalProjects.map((project) => (
+          <Product key={project.id} project={project} />
         ))}
       </div>
       <div className="pl-texts">
@@ -23,8 +23,8 @@ const ProductList = () => {
         </p>
       </div>
       <div className="pl-list">
-        {otherProjects.map((item) => (
-          <Product key={item.id} img={item.img} link={item.link} />
+        {otherProjects.map((project) => (
+          <Product key={project.id} project={project} />
         ))}
       </div>
     </div>

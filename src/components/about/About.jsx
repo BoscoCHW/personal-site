@@ -38,7 +38,7 @@ const About = () => {
           <h1 className="a-title">Skills</h1>
           <div className="a-skill-icons-wrapper">
             {skills.map(skill => (
-              <div className="a-skill-icon">
+              <div key={skill.name} className="a-skill-icon">
                 <i className={skill.class}></i>
               </div>
             ))}
@@ -46,7 +46,7 @@ const About = () => {
         </div>
         
         <div>
-          <button><a href="./bosco-chan-resume.pdf" download>Download my resume!</a></button>
+          <button><a href="./assets/images/bosco-chan-resume.pdf" download>Download my resume!</a></button>
         </div>
       </div>
     </div>
