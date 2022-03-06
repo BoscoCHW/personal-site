@@ -46,7 +46,7 @@ const About = () => {
         </div>
         
         <div>
-          <button><a href="./assets/images/bosco-chan-resume.pdf" download>Download my resume!</a></button>
+          <button><a href="https://drive.google.com/file/d/1bQ67Ve2j88Y6G-xjYbj8xhQBjy5zdp0A/view" download>Download my resume!</a></button>
         </div>
       </div>
     </div>
