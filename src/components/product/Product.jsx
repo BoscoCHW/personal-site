@@ -21,13 +21,13 @@ const Product = ({project}) => {
           {project.links.map(link => {
             switch(link.name) {
               case "github":
-                return (link.url && <a key={link.name} href={project.links[0].url} target="_blank" rel="noreferrer"><i className="devicon-github-original link-icon"></i></a>);
+                return (link.url && <a key={link.name} href={link.url} target="_blank" rel="noreferrer"><i className="devicon-github-original link-icon"></i></a>);
               case "TS":
-                return (link.url && <a key={link.name} href={project.links[0].url} target="_blank" rel="noreferrer"><i className="devicon-typescript-plain link-icon"></i></a>);
+                return (link.url && <a key={link.name} href={link.url} target="_blank" rel="noreferrer"><i className="devicon-typescript-plain link-icon"></i></a>);
               case "JS":
-                return (link.url && <a key={link.name} href={project.links[0].url} target="_blank" rel="noreferrer"><i className="devicon-javascript-plain link-icon"></i></a>);
+                return (link.url && <a key={link.name} href={link.url} target="_blank" rel="noreferrer"><i className="devicon-javascript-plain link-icon"></i></a>);
               default:
-                return (link.url && <a key={link.name} href={project.links[0].url} target="_blank" rel="noreferrer"><div><FontAwesomeIcon className="link-icon" icon="fa-solid fa-eye" /></div></a>)
+                return (link.url && <a key={link.name} href={link.url} target="_blank" rel="noreferrer"><div><FontAwesomeIcon className="link-icon" icon="fa-solid fa-eye" /></div></a>)
             }
           }
           )}
