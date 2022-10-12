@@ -1,6 +1,18 @@
 export const personalProjects = [
   {
-    id:"pp-1",
+    id:"pp-4",
+    title: "Jupyterlab Extension - Templatify",
+    img: "./assets/images/templatify2.gif",
+    description: "Templatify is a Jupyterlab extension that automatically generates python code snippets for data analysis (histograms, scatter plots, to correlation matrices).",
+    links: [
+      {
+        name: "github",
+        url: "https://github.com/BoscoCHW/MLH-Hackathon-Jupyterlab-Templatify"
+      }
+    ]
+  },
+  {
+    id:"pp-3",
     title: "Eventful",
     img: "./assets/images/eventful.png",
     description: "A calendar app that offers a quick and easy way for the user to make, organize, and edit their events.",
@@ -32,7 +44,7 @@ export const personalProjects = [
     ]
   },
   {
-    id: "pp-3",
+    id: "pp-1",
     title: "Shop Easy",
     img: "./assets/images/shop-easy.png",
     description: "A shopping site made with React Typescript.",
