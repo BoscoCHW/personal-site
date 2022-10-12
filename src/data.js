@@ -3,7 +3,7 @@ export const personalProjects = [
     id:"pp-4",
     title: "Jupyterlab Extension - Templatify",
     img: "./assets/images/templatify2.gif",
-    description: "Templatify is a Jupyterlab extension that automatically generates python code snippets for data analysis (histograms, scatter plots, to correlation matrices).",
+    description: "Templatify is a Jupyterlab extension that automatically generates python code snippets for data analysis.",
     links: [
       {
         name: "github",
@@ -79,7 +79,7 @@ export const otherProjects = [
     id: "op-2",
     title: "Jupyterlab-Git",
     img: "./assets/images/jupyterlab-git.gif",
-    description: "The git extension in Jupyterlab, a web-based interactive development environment for Jupyter Notebooks, offers seamless version control experience with git.",
+    description: "The git extension in Jupyterlab, a web-based development environment for ipynb, offers seamless version control experience with git.",
     links: [
       {
         name: "github",
