@@ -62,6 +62,18 @@ export const otherProjects = [
         url: "https://storiusapp.com/"
       }
     ]
+  },
+  {
+    id: "op-2",
+    title: "Jupyterlab-Git",
+    img: "./assets/images/jupyterlab-git.gif",
+    description: "The git extension in Jupyterlab, a web-based interactive development environment for Jupyter Notebooks, offers seamless version control experience with git.",
+    links: [
+      {
+        name: "github",
+        url: "https://github.com/BoscoCHW/jupyterlab-git"
+      }
+    ]
   }
 ]
 
@@ -85,6 +97,10 @@ export const skills = [
   {
     "name": "C",
     "class": "devicon-c-plain-wordmark"
+  },
+  {
+    "name": "C++",
+    "class": "devicon-cplusplus-plain-wordmark"
   },
   {
     "name": "React",
@@ -137,5 +153,9 @@ export const skills = [
   {
     "name": "Trello",
     "class": "devicon-trello-plain-wordmark"
-  }
+  },
+  {
+    "name": "Android",
+    "class": "devicon-android-plain-wordmark"
+  },
 ]
