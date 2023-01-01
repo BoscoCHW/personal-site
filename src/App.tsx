@@ -6,10 +6,10 @@ import ProductList from "./components/productList/ProductList";
 import Footer from "./components/footer/Footer";
 import Toggle from "./components/toggle/Toggle";
 import { ThemeContext } from "./context";
-import { library } from '@fortawesome/fontawesome-svg-core'
+import { IconDefinition, library } from '@fortawesome/fontawesome-svg-core'
 import { faEye } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faEye)
+library.add(faEye  as IconDefinition)
 
 const App = () => {
   const theme = useContext(ThemeContext);
@@ -18,7 +18,7 @@ const App = () => {
     <div
       style={{
         backgroundColor: darkMode ? "#222" : "white",
-        color: darkMode && "white",
+        color: darkMode ? "white" : undefined
       }}
     >
       <Toggle />

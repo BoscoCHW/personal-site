@@ -1,9 +1,23 @@
 import "./product.css";
 import React, {useState} from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 
-const Product = ({project}) => {
+interface IProductProp {
+  project: {
+    id: string;
+    title: string;
+    img: string;
+    description: string;
+    links: {
+      name: string;
+      url: string
+    }[]
+  }
+}
+
+const Product = ({project}: IProductProp) => {
 
   const [linkWrapperStyle, setLinkWrapperStyle] = useState({display: 'none'});
   const [imageStyle, setImageStyle] = useState({})
@@ -27,7 +41,7 @@ const Product = ({project}) => {
               case "JS":
                 return (link.url && <a key={link.name} href={link.url} target="_blank" rel="noreferrer"><i className="devicon-javascript-plain link-icon"></i></a>);
               default:
-                return (link.url && <a key={link.name} href={link.url} target="_blank" rel="noreferrer"><div><FontAwesomeIcon className="link-icon" icon="fa-solid fa-eye" /></div></a>)
+                return (link.url && <a key={link.name} href={link.url} target="_blank" rel="noreferrer"><div><FontAwesomeIcon className="link-icon" icon={"fa-solid fa-eye" as IconProp} /></div></a>)
             }
           }
           )}

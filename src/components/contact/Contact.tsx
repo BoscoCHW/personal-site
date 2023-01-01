@@ -7,23 +7,23 @@ import emailjs from "emailjs-com";
 import { ThemeContext } from "../../context";
 
 const Contact = () => {
-  const formRef = useRef();
+  const formRef = useRef<HTMLFormElement>(null);
   const [done, setDone] = useState(false)
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
     emailjs
       .sendForm(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-        formRef.current,
+        process.env.REACT_APP_EMAILJS_SERVICE_ID!,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID!,
+        formRef.current as HTMLFormElement,
         process.env.REACT_APP_EMAILJS_USER_ID
       )
       .then(
         (result) => {
-          formRef.current.reset();
+          formRef.current!.reset();
           setDone(true)
         },
         (error) => {
@@ -31,6 +31,11 @@ const Contact = () => {
         }
       );
   };
+
+  const darkModeInputStyle = {
+    backgroundColor: "#333",
+    color: "#FFF"
+  }
 
   return (
     <div className="c">
@@ -58,10 +63,10 @@ const Contact = () => {
             <b>Planning your next project?</b> I would love to hear about it and see how I can help!
           </p>
           <form className="contact-form" ref={formRef} onSubmit={handleSubmit}>
-            <input style={{backgroundColor: darkMode && "#333", color: darkMode && "#FFF"}} type="text" placeholder="Name" name="name" />
-            <input style={{backgroundColor: darkMode && "#333", color: darkMode && "#FFF"}} type="text" placeholder="Subject" name="subject" />
-            <input style={{backgroundColor: darkMode && "#333", color: darkMode && "#FFF"}} type="text" placeholder="Email" name="email" />
-            <textarea style={{backgroundColor: darkMode && "#333", color: darkMode && "#FFF"}} rows="5" placeholder="Message" name="message" />
+            <input style={darkMode ? darkModeInputStyle : undefined} type="text" placeholder="Name" name="name" />
+            <input style={darkMode ? darkModeInputStyle : undefined} type="text" placeholder="Subject" name="subject" />
+            <input style={darkMode ? darkModeInputStyle : undefined} type="text" placeholder="Email" name="email" />
+            <textarea style={darkMode ? darkModeInputStyle : undefined} rows={5} placeholder="Message" name="message" />
             <button>Submit</button>
             {done && "Thank you! I will get in touch soon!"}
           </form>
