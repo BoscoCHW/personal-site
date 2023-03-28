@@ -12,6 +12,18 @@ export const personalProjects = [
     ]
   },
   {
+    id:"pp-5",
+    title: "Langton's Ant",
+    img: "./assets/images/langton-ant.gif",
+    description: "Langton's ant is a two-dimensional universal Turing machine with a very simple set of rules but complex emergent behavior. Movement logic implemented with WebAssembly in Rust.",
+    links: [
+      {
+        name: "github",
+        url: "https://github.com/BoscoCHW/wasm-langton-ant"
+      }
+    ]
+  },
+  {
     id:"pp-3",
     title: "Eventful",
     img: "./assets/images/eventful.png",
